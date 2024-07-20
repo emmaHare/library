@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="notModal">
+    <header>
+        <h1>Library</h1>
+    </header>
+    <main>
+        <button class="book-button" id="bookBtn">+ Add Book</button>
+        <div id="gridContainer" class="grid-container"></div>
+    </main>
+    <footer>
+        <p>Made by <a href="https://github.com/EmmaBeansHare">EmmaBeansHare</a></p>
+    </footer>
+    </div>
+    <div class="modal-backdrop"></div>
+    <dialog id="formModal" class="modal">
+        <form method="dialog" class="add-book-form" id="addBookForm">
+            <legend>Add a new book</legend>
+            <input type="text" 
+            id="titleInput" 
+            placeholder="Title">
+            <input type="text"
+            id="authorInput"
+            placeholder="Author">
+            <input type="text" 
+            id="pagesInput"
+            placeholder="Pages">
+            <label class="read-status" for="readStatus">Have you read the book?
+                <input id="readStatus" type="checkbox">
+                <span class="checkbox"></span>
+            </label>
+            <button id="submitBtn" type="submit">Submit</button>
+        </form>
+    </dialog>
+</body>
+</html>
